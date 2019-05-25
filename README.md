@@ -7,12 +7,11 @@ Experimental simulated honeypot with USB-CDC and regular USB3 DOKs
 
 # Building steps for building the microkernel
 This repository contains
-- source code of the microkernel we use, coppied tepmorarily from [this gitlab repo](https://git.scipio.org/raziebe/pi3-public)
-- some libusb examples (internally used to analyze the structure of usb and other block devices, depicted by libusb)
-- docker image that installs ubuntu (bionic)
+- Source code of the microkernel we use, copied tepmorarily from [this gitlab repo](https://git.scipio.org/raziebe/pi3-public)
+- Some libusb examples (internally used to analyze the structure of usb and other block devices, depicted by libusb)
+- Docker image that installs ubuntu (bionic)
 The basic build process is running the [`build_docker_image.sh`](https://github.com/deankevorkian/virtual-honeypot/blob/master/build_scripts/LinuxKernelBuild/build_docker_image.sh) script. The script builds a docker image which in place installs all the prerequisites for building the kernel (on top of Ubuntu bionic)
 - Run [build.sh](https://github.com/deankevorkian/virtual-honeypot/blob/master/build_scripts/LinuxKernelBuild/build.sh) in order to build the kernel
-- Run [build_dtb.sh](https://github.com/deankevorkian/virtual-honeypot/blob/master/build_scripts/LinuxKernelBuild/build_dtb.sh) in order to build a devicetree binary
 
 # Creating an image for the Raspberry Pi 3 Model B+
 - First, build the microkernel from [here](#building-steps-for-building-the-microkernel)
